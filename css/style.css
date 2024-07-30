@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+ /*estilos generales*/
+body {background-color: #fbf3ea;}
+
+.otrositems { 
+          display: grid;
+         grid-template-columns:30% 30% 30%;
+         grid-template-rows: repeat(3, 200px);
+         row-gap:2px; 
+         column-gap: 40px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: repeat(2fr);
+row-gap: 100px;
+column-gap: 60px;
+margin: 40px;
+flex-wrap: wrap;
+}
+
+main img {
+     width: 100%;
+     height: 100%
+}
+
+
+/*estilos tablet*/
+@media screen and (min-width :768px) {
+    main .contenedor{
+  grid-template-rows: repeat (2,200px);
+  grid-template-columns: repeat (3,1fr) ;}
+
+ main .contenedor {
+      grid-column: 20px 20px;
+      grid-row: 30px 30px 30px;
+ }
+}
+
+@media screen and (min-width: 1024px) {
+main .img { grid-template-rows: repeat (30px 30px 30px);
+grid-template-columns: repeat (3,1fr) ;}
+}
+
+
+
+
+/*Textos*/
+
+h1 { font-family: "Lora", serif; font-optical-sizing: auto; font-weight:weight; font-style: italic ; text-align: center;color: #26201a;}
+
+h1 { background-color: #deb887;}
+
+main h2 { font-family: "Lora", serif; font-optical-sizing: auto; font-weight: weight; font-style: normal; text-align: center;color: #26201a;}
+
+a { font-family: "Lora", serif; font-optical-sizing: auto; font-weight: weight; font-style: normal; color: #26201a;  }
+
+p { font-family: "Lora", serif; font-optical-sizing: auto; font-weight: weight; font-style: normal; color: #26201a;padding: 0;}
+
+main p { 
+    @font-face  
+     font-family: "Lora", serif; font-optical-sizing: auto; font-weight: weight; font-style: normal; color: #26201a;}
+
+
+/*color menu*/
+
+header nav div ul li a { font-family: "Lora", serif; font-optical-sizing: auto; font-weight: weight; font-style: normal; color: #695843;}
+
+/*Nosotros*/
+
+main ul p { font-family: "roboto", serif; font-optical-sizing: auto; font-weight: weinght; font-style: normal; color:#fbf3ea; background-color: #26201a;}
+
+
+
+
