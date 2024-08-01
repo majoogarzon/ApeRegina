@@ -1,52 +1,79 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+background-color: #fbf3ea;}
 
  /*estilos generales*/
-body {background-color: #fbf3ea;}
-
-.otrositems { 
-          display: grid;
-         grid-template-columns:30% 30% 30%;
-         grid-template-rows: repeat(3, 200px);
-         row-gap:2px; 
-         column-gap: 40px;
-}
-
-.contenedor {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: repeat(2fr);
-row-gap: 100px;
-column-gap: 60px;
-margin: 40px;
-flex-wrap: wrap;
-}
-
 main img {
      width: 100%;
      height: 100%
 }
 
+    
+
+.otrositems { 
+    max-width: 50px;
+          display: grid;
+      border: 5px;}
+
+        main .otrositems {
+            display: grid;
+            grid-template-rows: 190px;
+            border:3px;
+            grid-template-columns: 200px 200px 200px ;
+           grid-template-areas: 
+            "partesdearriba partesdeabajo nosotros";
+            column-gap: 100px;
+            justify-content: space-evenly;
+           flex-wrap: wrap;
+        }
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: repeat(2fr);
+row-gap: 100px;
+column-gap: 30px;
+margin: 20px;
+flex-wrap: wrap;
+}
+
+.contenedorprincipal {
+    display: grid;
+    grid-template-columns: repeat(5, 200px) ;
+    grid-template-rows: 300px;
+    column-gap: 40px;
+    margin: 20px;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+
+
+
 
 /*estilos tablet*/
-@media screen and (min-width :768px) {
-    main .contenedor{
-  grid-template-rows: repeat (2,200px);
-  grid-template-columns: repeat (3,1fr) ;}
+@media only screen and (min-width :320px) {
+    main {
+        background-color: #fbf3ea;
+        grid-template-columns: 200px 200px;
+        grid-template-rows: repeat (3fr); }}
+  
 
- main .contenedor {
-      grid-column: 20px 20px;
-      grid-row: 30px 30px 30px;
- }
-}
+@media screen and (min-width: 768px) {
+    main { 
+        background-color: #deb887;
+        grid-template-rows: repeat (30px 30px 30px);
+    grid-template-columns: repeat (3,1fr) ;}
+    }
 
-@media screen and (min-width: 1024px) {
-main .img { grid-template-rows: repeat (30px 30px 30px);
-grid-template-columns: repeat (3,1fr) ;}
-}
-
+ @media only screen and (min-width: 1024px){
+    main { background-color: #fbf3ea;
+        grid-template-columns: 300px 300px 300px 300px;
+        grid-template-rows: repeat(2fr);}
+ }   
+    
 
 
 
@@ -75,6 +102,17 @@ header nav div ul li a { font-family: "Lora", serif; font-optical-sizing: auto; 
 
 main ul p { font-family: "roboto", serif; font-optical-sizing: auto; font-weight: weinght; font-style: normal; color:#fbf3ea; background-color: #26201a;}
 
+.nosotrosdescr {
+    display:flex ;
+   padding: 100px 40px 100px 40px;
+   background-color: #fbf3ea;
+   flex-wrap:wrap;}
 
+   .marcas {
+ box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+padding: 100px ;
+margin: auto;}
 
 
