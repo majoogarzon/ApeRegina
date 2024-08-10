@@ -1,0 +1,13 @@
+//estilos
+
+@mixin medidas ($width, $height) {
+    width: $width ;
+    height:$height;
+}
+   
+   
+    $color-principal:#fbf3ea;
+    $color-secundario: #deb887;
+    $color-letraprimario: #26201a;
+
+

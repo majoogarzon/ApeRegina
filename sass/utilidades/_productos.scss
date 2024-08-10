@@ -1,0 +1,25 @@
+
+@import "variables";
+
+main {
+     .contenedor {
+        display: grid;
+        grid-template-rows: 30% 30% 30%;
+        grid-template-columns: 40% 40%;
+        row-gap: 10%;
+        column-gap: 10%;
+        margin: 10px 10px 10px 15px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+   main{
+      .contenedor {
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-template-rows: repeat(2,40%);
+        column-gap: 5%;
+        justify-content: center;
+    }
+    
+     }
+}

@@ -1,0 +1,15 @@
+@import "../utilidades/variables";
+
+main .nosotrosdescr {
+            display: flex;
+            font-family: "lora",serif;font-optical-sizing: auto ;font-weight: weight;font-style:normal;
+            padding: 10px 40px 10px 40px;
+            color: $color-letraprimario;}
+
+    div ul.marcas {
+        box-sizing: border-box;
+        background-color: #261705;
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px;
+    } 

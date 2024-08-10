@@ -1,0 +1,64 @@
+//import
+@import "utilidades/productos";
+@import "utilidades/nosotros";
+@import "utilidades/variables";
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: $color-principal;
+    text-align: center;
+}
+header  {
+   div .logo { @include medidas(8%, 8%);}
+   }
+
+main {
+    img {
+        @include medidas (100%, 100%);
+    }
+    h1, h2 {
+        font-family: "lora",serif;font-optical-sizing: auto ;font-weight: weight;font-style: italic; color: $color-letraprimario;
+        background-color: $color-secundario;}
+ p {font-size: small; font-family: "lora, serif"; color: #25201a}
+ 
+
+    div .contenedorprincipal {
+        display: grid;
+        grid-template-columns: repeat(6, 18%);
+        grid-template-rows: 60%;
+        justify-content: space-evenly;
+        column-gap: 10px;
+        margin: 5px ;}
+    
+    div .otrositems {
+        display: grid;
+        grid-template-columns: repeat(3, 20%);
+        grid-template-rows: 65%;
+        justify-content: space-evenly;
+        }
+}   
+  
+@media only screen and (min-width: 768px){
+    main { 
+        div .contenedorprincipal {
+        grid-template-columns: repeat(5, 18%);
+        grid-template-rows: 80%;
+        margin-bottom: 10px;}
+
+        div .otrositems {
+            grid-template-columns: repeat(3, 20%);
+            grid-template-rows: 75%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    main {
+        div .contenedorprincipal {
+            grid-template-columns: repeat(5, 15%);
+            grid-row: 50%;
+        }
+    }
+}
