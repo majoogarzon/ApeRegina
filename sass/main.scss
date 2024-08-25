@@ -10,15 +10,17 @@
     background-color: $color-principal;
     text-align: center;
 }
-header  {
-   div .logo { @include medidas(8%, 8%);}
+header {
+   div .logo {display: flexbox;     
+               font-size:xx-small; }
    }
-
-main {
+  
+   main {
     img {
         @include medidas (100%, 100%);
     }
-    h1, h2 {
+
+    h1, h2, h3 {
         font-family: "lora",serif;font-optical-sizing: auto ;font-weight: weight;font-style: italic; color: $color-letraprimario;
         background-color: $color-secundario;}
  p {font-size: small; font-family: "lora, serif"; color: #25201a}

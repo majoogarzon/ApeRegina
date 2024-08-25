@@ -1,4 +1,37 @@
+main .contenedor {
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  grid-template-columns: 40% 40%;
+  row-gap: 10%;
+  column-gap: 10%;
+  margin: 10px 10px 10px 15px;
+}
 
+@media only screen and (min-width: 1024px) {
+  main .contenedor {
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: repeat(2, 40%);
+    column-gap: 5%;
+    justify-content: center;
+  }
+}
+main .nosotrosdescr {
+  display: flex;
+  font-family: "lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  padding: 10px 40px 10px 40px;
+  color: #26201a;
+}
+
+div ul.marcas {
+  box-sizing: border-box;
+  background-color: #261705;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+}
 
 * {
   margin: 0;
@@ -9,8 +42,8 @@
 }
 
 header div .logo {
-  width: 8%;
-  height: 8%;
+  display: flexbox;
+  font-size: xx-small;
 }
 
 main img {
@@ -62,38 +95,5 @@ main div .otrositems {
     grid-row: 50%;
   }
 }
-main .contenedor {
-  display: grid;
-  grid-template-rows: 30% 30% 30%;
-  grid-template-columns: 40% 40%;
-  row-gap: 10%;
-  column-gap: 10%;
-  margin: 10px 10px 10px 15px;
-}
 
-@media only screen and (min-width: 1024px) {
-  main .contenedor {
-    grid-template-columns: 20% 20% 20% 20%;
-    grid-template-rows: repeat(2, 40%);
-    column-gap: 5%;
-    justify-content: center;
-  }
-}
-main .nosotrosdescr {
-  display: flex;
-  font-family: "lora", serif;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
-  padding: 10px 40px 10px 40px;
-  color: #26201a;
-}
-
-div ul.marcas {
-  box-sizing: border-box;
-  background-color: #261705;
-  flex-direction: column;
-  padding: 10px;
-  margin: 20px;
-}
 /*# sourceMappingURL=style.css.map */
