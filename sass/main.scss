@@ -1,66 +1,108 @@
-//import
-@import "utilidades/productos";
-@import "utilidades/nosotros";
-@import "utilidades/variables";
-
-*{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: $color-principal;
-    text-align: center;
-}
-header {
-   div .logo {display: flexbox;     
-               font-size:xx-small; }
-   }
-  
-   main {
-    img {
-        @include medidas (100%, 100%);
-    }
-
-    h1, h2, h3 {
-        font-family: "lora",serif;font-optical-sizing: auto ;font-weight: weight;font-style: italic; color: $color-letraprimario;
-        background-color: $color-secundario;}
- p {font-size: small; font-family: "lora, serif"; color: #25201a}
- 
-
-    div .contenedorprincipal {
-        display: grid;
-        grid-template-columns: repeat(6, 18%);
-        grid-template-rows: 60%;
-        justify-content: space-evenly;
-        column-gap: 10px;
-        margin: 5px ;}
-    
-    div .otrositems {
-        display: grid;
-        grid-template-columns: repeat(3, 20%);
-        grid-template-rows: 65%;
-        justify-content: space-evenly;
-        }
-}   
-  
-@media only screen and (min-width: 768px){
-    main { 
-        div .contenedorprincipal {
-        grid-template-columns: repeat(5, 18%);
-        grid-template-rows: 80%;
-        margin-bottom: 10px;}
-
-        div .otrositems {
-            grid-template-columns: repeat(3, 20%);
-            grid-template-rows: 75%;
-        }
-    }
+main .contenedor {
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  grid-template-columns: 40% 40%;
+  row-gap: 10%;
+  column-gap: 10%;
+  margin: 10px 30px 10px 15px;
 }
 
-@media only screen and (min-width: 1024px){
-    main {
-        div .contenedorprincipal {
-            grid-template-columns: repeat(5, 15%);
-            grid-row: 50%;
-        }
-    }
+@media only screen and (min-width: 1024px) {
+  main .contenedor {
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-rows: repeat(2, 40%);
+    column-gap: 5%;
+    justify-content: center;
+  }
 }
+main .nosotrosdescr {
+  display: flex;
+  font-family: "lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  padding: 10px 40px 10px 40px;
+  color: #26201a;
+}
+
+div ul.marcas {
+  box-sizing: border-box;
+  background-color: #261705;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fbf3ea;
+  text-align: center;
+}
+
+header div .logo {
+  display: flexbox;
+  font-size: xx-small;
+}
+
+main img {
+  width: 100%;
+  height: 100%;
+}
+
+main h1, main h2 {
+  font-family: "lora", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: italic;
+  color: #26201a;
+  background-color: #deb887;
+}
+
+main p {
+  font-size: small;
+  font-family: "lora, serif";
+  color: #25201a;
+}
+
+main div .contenedorprincipal {
+  display: grid;
+  grid-template-columns: repeat(6, 18%);
+  grid-template-rows: 60%;
+  justify-content: space-evenly;
+  column-gap: 10px;
+  margin: 5px;
+}
+
+main div .otrositems {
+  display: grid;
+  grid-template-columns: repeat(3, 20%);
+  grid-template-rows: 65%;
+  justify-content: space-evenly;
+}
+
+@media only screen and (min-width: 768px) {
+  main div .contenedorprincipal {
+    grid-template-columns: repeat(5, 18%);
+    grid-template-rows: 80%;
+    margin-bottom: 10px;
+  }
+  main div .otrositems {
+    grid-template-columns: repeat(3, 20%);
+    grid-template-rows: 75%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main div .contenedorprincipal {
+    grid-template-columns: repeat(5, 15%);
+    grid-row: 50%;
+  }
+}
+footer {
+  margin-top: 100px;
+}
+
+
+
+/*# sourceMappingURL=main.scss.map */

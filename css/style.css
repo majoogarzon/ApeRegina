@@ -4,8 +4,9 @@ main .contenedor {
   grid-template-columns: 40% 40%;
   row-gap: 10%;
   column-gap: 10%;
-  margin: 10px 10px 10px 15px;
+  margin: 10px 30px 10px 15px;
 }
+
 
 @media only screen and (min-width: 1024px) {
   main .contenedor {
@@ -94,6 +95,9 @@ main div .otrositems {
     grid-template-columns: repeat(5, 15%);
     grid-row: 50%;
   }
+}
+footer {
+  margin-top: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
